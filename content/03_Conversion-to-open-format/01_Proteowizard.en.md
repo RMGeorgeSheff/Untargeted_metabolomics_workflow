@@ -4,6 +4,7 @@ weight: 1
 ---
 
 We want to convert our .RAW files (which each contain lots of data and metadata about the run in separate files and are BIG). .RAW files are specific to Waters software and will not work with many open source tools. We will convert them to .mzML which is the standard open data format for mass spectrometry[^1]. 
+While packages exist to perform this work using programming oriented software (e.g. pymzml, omigami, pyMassSpec), we will be perform this conversion using the easy to use software Proteowizard.
 
 ## File conversion using Proteowizard
 
