@@ -6,7 +6,16 @@ tags: ["MALDI", "DIMS"]
 
 ## Generating a Peak Table from MassUp Data
 
-The first thing we need to do is import all the libraries and functions we will need to run the code. I have put it all into one source code for the whole workflow to save space
+To begin we need to create a neat file structure to to contain our varous csv. files, folders, and R script.
+- A folder named afer your experiment, you can locate this on your Desktop and move it afterwards. Set this as your working directory later.
+- Within experiment folder...
+- Save a new R project and script.
+- Create a folder called "Tidy_data"
+- Create a folder called "Data". Move your MassUp output folders here. Add your "treatments.csv" and "samplelist.csv" files here 
+
+{{< figure src="/images/Workflow_R_folder_format.png" >}}
+
+The next thing we need to do is import all the libraries and functions we will need to run the code. I have put it all into one source code for the whole workflow to save space
 and avoid confusion for people who don't like looking at code!
 
 > :warning: you will need to manually install the following packages using `install.packages()` or RStudio
