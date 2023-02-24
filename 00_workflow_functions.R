@@ -15,8 +15,7 @@ tidy_MALDI_peak_table <- function(file_path){
     filter(directories != "treatments.csv") %>%
     filter(directories != "samplelist.csv") %>% 
     filter(directories != "Tidy_data") %>% 
-    filter(directories != list.files(file_path, pattern = "\\.Rproj$")) %>% 
-    filter(directories != list.files(file_path, pattern =  "\\.R$"))
+  
   
   files_to_import <- tibble(Filename = "")
   
